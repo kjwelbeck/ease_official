@@ -1,11 +1,12 @@
 EaseOfficial::Application.routes.draw do
+  
   get "users/new"
 
-  root 'static_pages#home'
+  root to: 'static_pages#home'
   match '/faqs', to: 'static_pages#faqs', via:'get'
   match '/aboutus', to: 'static_pages#aboutus', via:'get'
   match '/newminutes', to: 'users#new', via:'get'
-
+end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -62,5 +63,3 @@ EaseOfficial::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-  
-end
