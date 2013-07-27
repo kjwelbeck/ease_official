@@ -38,7 +38,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 =end
-ruby '1.9.3p429'
+ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 
