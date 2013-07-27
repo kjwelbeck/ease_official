@@ -1,8 +1,10 @@
 EaseOfficial::Application.routes.draw do
-  get "static_pages/home"
+  get "users/new"
 
-  get "static_pages/aboutus"
-  get "static_pages/faqs"
+  root 'static_pages#home'
+  match '/faqs', to: 'static_pages#faqs' via:'get'
+  match '/aboutus', to: 'static_pages#aboutus' via:'get'
+  match '/newminutes' to: 'users#new' via:'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
