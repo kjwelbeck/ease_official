@@ -1,11 +1,22 @@
 EaseOfficial::Application.routes.draw do
   
-  get "minutes/new"
-  get "users/new"
+  resources :agendas
+
+
+  resources :meetings
+
+
+  # get "meetings/new"
+
+
+  resource :users
+
 
   root to: 'static_pages#home'
   match '/faqs', to: 'static_pages#faqs', via:'get'
   match '/aboutus', to: 'static_pages#aboutus', via:'get'
+  match '/getinvolved', to: 'static_pages#getinvolved', via:'get'
+  match '/events', to: 'static_pages#events', via:'get'
   match '/newminutes', to: 'minutes#new', via:'get'
 end
   # The priority is based upon order of creation:

@@ -7,4 +7,11 @@ class StaticPagesController < ApplicationController
 
   def faqs
   end
+
+  def events
+  end
+
+  def getinvolved
+  end
+
 end

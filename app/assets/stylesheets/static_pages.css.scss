@@ -1,3 +1,45 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+.main{
+	margin-top:20px;
+	margin:auto;
+	width:800px;
+	border-top:solid 3px #f1f1f1;
+	padding:40px;
+}
+.welcome{
+	/* Rotate div */
+transform:rotate(-10deg);
+-ms-transform:rotate(-10deg); /* IE 9 */
+-webkit-transform:rotate(-10deg); /* Safari and Chrome */
+font-size:30px;
+position:relative;
+top:-50px;
+left:280px;
+color:#f0f0f0;
+font-family:'blokletters_balpenbalpen';
+}
+.float{
+-webkit-box-shadow: 41px 40px 9px -37px rgba(242,242,242,1);
+-moz-box-shadow: 41px 40px 9px -37px rgba(242,242,242,1);
+box-shadow: 41px 40px 9px -37px rgba(242,242,242,1);
+}
+
+.thumb{
+margin:15px;
+-webkit-box-shadow: 5px 9px 9px -5px rgba(242,242,242,1);
+-moz-box-shadow: 5px 9px 9px -5px rgba(242,242,242,1);
+box-shadow: 5px 9px 9px -5px rgba(242,242,242,1);
+
+}
+
+ul.objectives li{
+
+	list-style:image-url("bullet.png");
+	padding-left:40px;
+	
+
+}
